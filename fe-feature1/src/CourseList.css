@@ -1,0 +1,209 @@
+/* CourseList.css */
+
+.course-container {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif; /* Change font for better readability */
+}
+
+.course-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 24px; /* Increase font size for the title */
+  font-weight: bold; /* Make title bold */
+  color: #333; /* Darker color for better contrast */
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4개의 열로 균등하게 나눔 */
+  gap: 15px; /* 항목들 사이의 간격 */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.course-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Slightly rounded corners */
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.course-item:hover {
+  transform: scale(1.03); /* Slightly enlarge item on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.course-thumbnail {
+  width: 100px; /* Thumbnail width */
+  height: 100px; /* Thumbnail height */
+  margin-bottom: 10px; /* Space between thumbnail and title */
+  border-radius: 4px; /* Slightly rounded corners for thumbnail */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center title and instructor information */
+}
+
+.course-item h3 {
+  margin: 0;
+  font-size: 18px; /* Increase font size for better readability */
+  color: #333; /* Darker color for title */
+  text-align: center; /* Center align title */
+}
+
+.course-item p {
+  margin: 5px 0 0;
+  font-size: 14px; /* Font size for instructor information */
+  color: #555; /* Slightly lighter color for description */
+}
+
+/* Modal Styles */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background for modal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal appears above all content */
+}
+
+.modal-content {
+  background: white;
+  padding: 30px; /* Increase padding for a spacious look */
+  border-radius: 12px; /* More rounded corners for modal */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+  max-width: 450px; /* Slightly wider modal */
+  width: 90%; /* Responsive width */
+}
+
+.modal-content h2 {
+  margin: 0 0 20px;
+  font-size: 20px; /* Increase font size for modal title */
+  color: #333; /* Darker color for better contrast */
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%; /* Full width for input and textarea */
+  padding: 10px; /* Padding for comfort */
+  margin: 10px 0; /* Space between inputs */
+  border: 1px solid #ddd; /* Light border for inputs */
+  border-radius: 4px; /* Rounded corners for inputs */
+}
+
+.modal-content button {
+  margin-top: 10px;
+  margin: 5px;
+  padding: 10px 15px; /* Increase padding for buttons */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text for better contrast */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.modal-content button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+
+/* Upload Button Styles */
+
+.upload-button {
+  width: 150px; /* Set the button width */
+  height: 40px; /* Set the button height */
+  padding: 0px 0px; /* Comfortable padding for the button */
+  margin-bottom: 10px;
+  
+  
+  background-color: #94a6ff; /* Green background color */
+  color: white; /* White text color for contrast */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 16px; /* Increase font size for readability */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.upload-button:hover {
+  background-color: #4c73ff; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.upload-button:active {
+  transform: translateY(0); /* Reset lift effect when clicked */
+}
+
+
+/* View All Courses Button */
+
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  margin-bottom: 10px; /* Space below the button container */
+}
+
+
+.view-all-button {
+  width: 130px; /* 동일한 너비 */
+  height: 40px; /* 동일한 높이 */
+  padding: 8px 16px; /* Smaller padding */
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  font-size: 14px; /* Smaller font size */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease, content 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  margin-right: 5px;
+}
+
+.view-all-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  content: "모든 강의 전체보기"; /* Change text on hover */
+}
+
+/* View My Courses Button */
+.view-my-button {
+  width: 130px; /* 동일한 너비 */
+  height: 40px; /* 동일한 높이 */
+  padding: 8px 16px; /* Smaller padding */
+  background-color: #ff9800; /* Orange background */
+  color: white; /* White text */
+  font-size: 14px; /* Smaller font size */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease, content 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.view-my-button:hover {
+  background-color: #e68900; /* Darker orange on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  content: "내 강의 전체보기"; /* Change text on hover */
+}

@@ -1,0 +1,45 @@
+.signup-container {
+  display: flex;
+  height: 100vh; /* Viewport Height */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  background-color: #f5f5f5;
+}
+
+.sidebar {
+  width: 250px; /* 사이드바 넓이 */
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-right: 1px solid #ddd;
+}
+
+.signup-form {
+  padding: 23px;
+  width: 400px;
+  background-color: #fff; /* 배경 색상 추가 */
+  border-radius: 8px; /* 약간의 곡선 처리 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-row input, .form-row select {
+  width:350px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

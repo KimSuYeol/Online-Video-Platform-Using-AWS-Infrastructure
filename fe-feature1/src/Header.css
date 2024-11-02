@@ -1,0 +1,88 @@
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  color: white;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo h1 {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-links ul li {
+  margin-left: 20px;
+  /* margin-top: 10px; */
+}
+
+.nav-links ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 40px;
+
+}
+
+.nav-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  height: 50%;
+  margin-left: 85px;
+  
+}
+
+/* 드롭다운 */
+.user-dropdown-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
+/* 드롭다운 메뉴 */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* 드롭다운 메뉴를 버튼 바로 아래에 위치시킴 */
+  right: 0%; /* 드롭다운을 버튼 왼쪽으로 정렬 */
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 2000; /* 더 높은 값으로 설정 */
+  min-width: 200px; /* 최소 너비 설정 */
+}
+
+.dropdown-menu p {
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
