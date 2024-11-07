@@ -1,19 +1,20 @@
 ## AWS 인프라를 활용한 온라인 동영상/스트리밍 플랫폼
 
-### Architecture
-<img width="802" alt="image" src="https://github.com/user-attachments/assets/58a323d7-44bd-438f-9947-84608dd67ebe">
-
-주요 기능
+###주요 기능
 
 
 비디오 업로드 및 재생, 실시간 스트리밍, AWS Cognito를 통한 사용자 관리, EKS를 활용한 인프라 확장성, GitHub Actions와 ArgoCD를 활용한 CI/CD 
 파이프라인, 업데이트 알림을 위한 Slack Webhook 생성
 
 
-맡은 역할
+###맡은 역할
 
 
 아키텍처 설계 및 구성, Cognito를 통한 사용자 인증 관리, MediaConvert를 사용한 비디오 처리 구현, 네트워크 설정 구성
+---
+
+### Architecture
+<img width="802" alt="image" src="https://github.com/user-attachments/assets/58a323d7-44bd-438f-9947-84608dd67ebe">
 
 <table>
 
